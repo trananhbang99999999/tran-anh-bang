@@ -1,0 +1,11 @@
+{
+  "name": "fit4110-lab04-test",
+  "version": "1.0.0",
+  "scripts": {
+    "test:local": "newman run postman/collections/FIT4110_lab04_iot_docker.postman_collection.json -e postman/environments/FIT4110_lab04_local.postman_environment.json -r cli,html --reporter-html-export reports/newman-lab04-local.html"
+  },
+  "dependencies": {
+    "newman": "^6.1.1",
+    "newman-reporter-html": "^1.0.5"
+  }
+}
